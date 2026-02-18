@@ -1,0 +1,212 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+    font-family:"poppins",sans-serif;
+}
+
+:root{
+    --bg:rgb(24,24,24);
+    --card:rgb(21,21,21);
+    --gradient:linear-gradient(to right,#6cff52,#3ec5ff);
+}
+
+body{
+    background:var(--bg);
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* ================= SCROLL ================= */
+html{scroll-snap-type:y mandatory;}
+section{
+    min-height:100vh;
+    padding:120px 15% 70px;
+    scroll-snap-align:start;
+}
+
+/* ================= NAVBAR ================= */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 15%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(15,15,15,0.85);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:2em;
+    font-weight:800;
+    color:white;
+}
+
+.links{
+    display:flex;
+    gap:2em;
+}
+
+.links a{
+    color:white;
+    opacity:.7;
+    transition:.2s;
+}
+.links a:hover{opacity:1}
+
+/* ================= BUTTON ================= */
+.btn{
+    padding:8px 18px;
+    border:2px solid white;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.25s;
+}
+.btn:hover{
+    background:white;
+    color:black;
+}
+
+/* ================= GRADIENT TEXT ================= */
+span{
+    background:var(--gradient);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+/* ================= HOME ================= */
+#Home{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2em;
+}
+
+#Home img{
+    width:200px;
+    border-radius:50%;
+}
+
+.info-box{
+    text-align:center;
+    max-width:600px;
+}
+.info-box h1{font-size:2.5em;}
+.info-box h3{font-size:1.4em;color:#3ec5ff;}
+.info-box p{opacity:.8;}
+
+.btn-box{
+    display:flex;
+    gap:1em;
+}
+
+
+/* ================= SKILLS ================= */
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.skill{
+    padding:12px 25px;
+    border:2px solid white;
+    border-radius:8px;
+    transition:.3s;
+
+}
+.skill:hover{
+    background:var(--gradient);
+    color:black;
+}
+
+/* ================= SOCIAL ================= */
+.social-icons{
+    margin-top:0px;
+    font-size:30px;
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+
+.social-icons a{
+    color:white;
+    transition:.3s;
+}
+.social-icons a:hover{
+    color:#3ec5ff;
+}
+
+/* ================= CONTACT INFO ================= */
+.contact-info-box{
+    margin-top:40px;
+    background:var(--card);
+    padding:30px;
+    border-radius:12px;
+    line-height:2;
+    max-width:500px;
+}
+
+/* ================= CONTACT FORM ================= */
+#Contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:400px;
+    margin:auto;
+}
+
+#Contact input,#Contact textarea{
+    padding:12px;
+    border-radius:6px;
+    border:1px solid #3ec5ff;
+    background:#111;
+    color:white;
+}
+
+#Contact input:focus,#Contact textarea:focus{
+    outline:none;
+    border-color:#6cff52;
+}
+
+/* ================= SCROLLBAR ================= */
+::-webkit-scrollbar{width:8px;}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#6cff52,#3ec5ff);
+    border-radius:10px;
+}
+
+/* ================= MOBILE ================= */
+#menu{
+    display:none;
+    font-size:32px;
+    color:#3ec5ff;
+}
+
+@media(max-width:768px){
+#menu{display:block}
+
+.links{
+    position:absolute;
+    right:-100%;
+    top:80px;
+    background:#111;
+    flex-direction:column;
+    padding:20px;
+    transition:.3s;
+}
+.links.active{right:20px}
+}
+.btn{
+    color: honeydew;
+}
+
+
