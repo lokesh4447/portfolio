@@ -46,6 +46,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link=>{
         navLinks.classList.remove("active");
     });
 });
+// Optional: alert when project button clicked
+document.querySelectorAll('.project-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        console.log('Opening project link...');
+    });
+});
 
 /* WHEEL SECTION SCROLL */
 const sections=document.querySelectorAll("section");
