@@ -89,10 +89,10 @@ span{
 }
 
 #Home img{
-    /* width:150px;        /* your size */ */
-    height:150px;       /* ✅ add same height as width */
-    border-radius:50%;  /* makes circle */
-    object-fit:cover;   /* prevents stretching */
+    width:150px;        
+    /* height:150px;        */
+    border-radius:50%;  
+    object-fit:cover;   
 }
 
 .info-box{
