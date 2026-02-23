@@ -89,7 +89,7 @@ span{
 }
 
 #Home img{
-    width:150px;        /* your size */
+    /* width:150px;        /* your size */ */
     height:150px;       /* ✅ add same height as width */
     border-radius:50%;  /* makes circle */
     object-fit:cover;   /* prevents stretching */
@@ -148,14 +148,7 @@ span{
 }
 
 /* ================= CONTACT INFO ================= */
-/* .contact-info-box{
-    margin-top:40px;
-    background:var(--card);
-    padding:30px;
-    border-radius:12px;
-    line-height:2;
-    max-width:500px;
-} */
+
 .contact-info-box{
     margin-top:40px;
     background:var(--card);
